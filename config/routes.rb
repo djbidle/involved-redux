@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'involved/home'
+
+  get 'involved/search'
+
+  get 'involved/profile'
+
+  get 'involved/trending'
+
+  get 'involved/graph'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

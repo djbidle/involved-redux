@@ -11,13 +11,12 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.mysql2
-  adapter: mysql2
   encoding: utf8
-  database: c9
-  username: <%=ENV['involveduser']%>
-  password: 'involvedpass'
-  host: <%=ENV['IP']%>
+  database: INvolvedDB
+  username: involvedadmin
+  password: inadminpass
+  host: involveddb.ctg0oatfnw6q.us-east-1.rds.amazonaws.com
+  port: 3306
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

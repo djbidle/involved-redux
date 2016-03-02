@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  email: MyString
-  house_number: 1
-  street: MyString
-  city: MyString
-  zip: 1
-
-two:
-  name: MyString
-  email: MyString
-  house_number: 1
-  street: MyString
-  city: MyString
-  zip: 1
+#one:
+#  name: MyString
+#  email: MyString
+#  house_number: 1
+#  street: MyString
+#  city: MyString
+#  zip: 1
+#
+#two:
+#  name: MyString
+#  email: MyString
+#  house_number: 1
+#  street: MyString
+#  city: MyString
+#  zip: 1

@@ -16,7 +16,7 @@ gem 'bulma-rails', '~> 0.0.15'
 # Use font awesome
 gem 'font-awesome-rails', '~> 4.5.0.1'
 # Used to as a fix
-gem 'railties', '~> 4.2.1'
+gem 'railties', '~> 4.2.0'
 # Used for heroku deployment
 gem 'rails_12factor', group: :production
 # See https://github.com/rails/execjs#readme for more supported runtimes

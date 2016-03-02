@@ -42,9 +42,19 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    bulma-rails (0.0.15)
+    bulma-rails (0.0.16)
       sass (~> 3.2)
     byebug (8.2.2)
+    capistrano (3.4.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (~> 1.3)
+    capistrano-bundler (1.1.4)
+      capistrano (~> 3.1)
+      sshkit (~> 1.2)
+    capistrano-rails (1.1.6)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -107,6 +117,9 @@ GEM
     multi_json (1.11.2)
     mysql2 (0.3.20)
     nenv (0.3.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (3.0.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     notiffany (0.0.8)
@@ -170,6 +183,9 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sshkit (1.8.1)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.2)
@@ -193,6 +209,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bulma-rails (~> 0.0.15)
   byebug
+  capistrano-rails
   coffee-rails (~> 4.1.1)
   font-awesome-rails (~> 4.5.0.1)
   guard-minitest (= 2.3.1)
@@ -203,12 +220,10 @@ DEPENDENCIES
   mysql2 (~> 0.3.20)
   rails (= 4.2.3)
   railties (~> 4.2.1)
+  rake (~> 10.5.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
-
-BUNDLED WITH
-   1.11.2

@@ -1,6 +1,6 @@
 have_header: checking for ruby/thread.h... -------------------- yes
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -11,7 +11,7 @@ checked program was:
 6: }
 /* end */
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -23,7 +23,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_without_gvl() in ruby/thread.h... -------------------- yes
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:15:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
  int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
@@ -51,7 +51,7 @@ checked program was:
 
 have_func: checking for rb_thread_blocking_region()... -------------------- no
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:13:57: error: ‘rb_thread_blocking_region’ undeclared (first use in this function)
  int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
@@ -77,12 +77,12 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
 /* end */
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:13:1: warning: implicit declaration of function ‘rb_thread_blocking_region’ [-Wimplicit-function-declaration]
  int t(void) { rb_thread_blocking_region(); return 0; }
  ^
-/tmp/ccCtpLJI.o: In function `t':
+/tmp/ccQnjG1n.o: In function `t':
 /home/ubuntu/workspace/vendor/cache/ruby/2.2.0/gems/mysql2-0.3.20/ext/mysql2/conftest.c:13: undefined reference to `rb_thread_blocking_region'
 collect2: error: ld returned 1 exit status
 checked program was:
@@ -106,7 +106,7 @@ checked program was:
 
 have_func: checking for rb_wait_for_single_fd()... -------------------- yes
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:13:57: error: ‘rb_wait_for_single_fd’ undeclared (first use in this function)
  int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
@@ -132,7 +132,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
 /* end */
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:13:1: warning: implicit declaration of function ‘rb_wait_for_single_fd’ [-Wimplicit-function-declaration]
  int t(void) { rb_wait_for_single_fd(); return 0; }
@@ -158,7 +158,7 @@ checked program was:
 
 have_func: checking for rb_hash_dup()... -------------------- yes
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:13:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
  int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_dup; return 0; }
@@ -184,7 +184,7 @@ checked program was:
 
 have_func: checking for rb_intern3()... -------------------- yes
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:13:57: error: ‘rb_intern3’ undeclared (first use in this function)
  int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
@@ -210,7 +210,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
 /* end */
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:13:1: warning: implicit declaration of function ‘rb_intern3’ [-Wimplicit-function-declaration]
  int t(void) { rb_intern3(); return 0; }
@@ -236,7 +236,7 @@ checked program was:
 
 have_header: checking for mysql.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -248,7 +248,7 @@ checked program was:
 
 have_header: checking for errmsg.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -260,7 +260,7 @@ checked program was:
 
 have_header: checking for mysqld_error.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -270,7 +270,7 @@ checked program was:
 
 --------------------
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.1/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.1/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic    -L/usr/lib/x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -ldl  -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -Wall -funroll-loops -lpthread -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.2.4/include/ruby-2.2.0 -I. -I/usr/include/mysql     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.2.4/lib -Wl,-R/usr/local/rvm/rubies/ruby-2.2.4/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic    -L/usr/lib/x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -ldl  -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -Wall -funroll-loops -lpthread -lgmp -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"

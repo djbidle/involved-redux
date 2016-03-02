@@ -13,18 +13,30 @@ development:
   <<: *default
   encoding: utf8
   database: INvolvedDB
-  username: involvedadmin
-  password: inadminpass
+  username: involveduser
+  password: inuserpass
   host: involveddb.ctg0oatfnw6q.us-east-1.rds.amazonaws.com
   port: 3306
-
+  
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: db/test.mysql2
+  encoding: utf8
+  database: INvolvedDB
+  username: involveduser
+  password: inuserpass
+  host: involveddb.ctg0oatfnw6q.us-east-1.rds.amazonaws.com
+  port: 3306
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: db/production.mysql2 
+  encoding: utf8
+  database: INvolvedDB
+  username: involveduser
+  password: inuserpass
+  host: involveddb.ctg0oatfnw6q.us-east-1.rds.amazonaws.com
+  port: 3306

@@ -5,6 +5,9 @@ class InvolvedController < ApplicationController
   def search
   end
 
+  def signup
+  end
+  
   def profile
   end
 
@@ -13,4 +16,5 @@ class InvolvedController < ApplicationController
 
   def graph
   end
+
 end

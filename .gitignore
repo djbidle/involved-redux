@@ -18,3 +18,5 @@
 
 # Igmore spring for Guard
 /spring/*.pid
+vendor/cache
+vendor/bundle

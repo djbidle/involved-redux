@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
-
+ruby "2.2.4"  
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.5'
+gem "builder", "~> 3.2.2"
 # Use sqlite3 as the database for Active Record
 gem 'mysql2', '~> 0.3.20'
 # Use SCSS for stylesheets
@@ -16,7 +17,7 @@ gem 'bulma-rails', '~> 0.0.15'
 # Use font awesome
 gem 'font-awesome-rails', '~> 4.5.0.1'
 # Used to as a fix
-gem 'railties', '~> 4.2.0'
+gem 'railties', '~> 4.2.5'
 # Used for heroku deployment
 gem 'rails_12factor', group: :production
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -59,4 +60,4 @@ group :development do
 
 end
 
-ruby "2.2.4"  
+

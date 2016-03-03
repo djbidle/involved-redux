@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
+# for deployment
 gem "builder", "~> 3.2.2"
 # Use sqlite3 as the database for Active Record
 gem 'mysql2', '~> 0.3.20'
@@ -18,8 +19,6 @@ gem 'bulma-rails', '~> 0.0.15'
 gem 'font-awesome-rails', '~> 4.5.0.1'
 # Used to as a fix
 gem 'railties', '~> 4.2.5'
-# Used for heroku deployment
-gem 'rails_12factor', group: :production
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -60,4 +59,8 @@ group :development do
 
 end
 
-
+group :production do
+  #gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+  gem 'puma', '~> 2.16'
+end

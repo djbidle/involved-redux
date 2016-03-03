@@ -19,15 +19,15 @@
   </div>
 </header>
 
-<br><br>
-
 <div class="container is-half">
 <h1 class="title is-1 bold is-text-centered">Sign Up</h1>
+<br />
 <hr />
+
 <div class="is-text-centered">
 <%= form_for(@user) do |f| %>
  <%= render 'shared/error_messages' %>
-      
+      <br />
       <%= f.label :name %>&nbsp;
        <%= f.text_field :name, class: 'form-control' %><br />
      
@@ -55,6 +55,7 @@
      
       <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>
+     <br />
 </div>    
 <hr />
 </div>

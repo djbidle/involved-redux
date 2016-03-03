@@ -1,4 +1,4 @@
-<% provide(:title, "Profile") %>
+<% provide(:title, @user.name) %>
 <header class="blue">
   <div class="header-left is-pulled-left">
       <a href="/">
@@ -14,29 +14,31 @@
 
     <!-- Right side -->
   <div class="header-right header-menu is-pulled-right">
+    <!--
     <span class="header-item">
       <a href="#">Bills</a>
     </span>
     <span class="header-item">
       <a href="#">Trending</a>
     </span>
-    <span class="header-item">
-      <a class="button" href="#">Login</a>
-    </span>
+    -->
   </div>
 </header>
 
 <br />
   <div class="container is-text-centered">
-    <h3 class="title is-3">Hi, <span class="light-blue"></span>!</h3>
+    
+    
+    <h3 class="title is-3">Hi, <%= @user.name %><span class="light-blue"></span>!</h3>
+    <div class="" alt="User Profile Picture"><%= gravatar_for @user %></div>
     <p>You have <span class="light-blue">21</span> points until your next badge.</p>
     <p>Earn points by voting on and sharing bills.</p>
     <br />
-    <a class="button is-success is-large">
-      Check out some bills
-    </a>
+      <a href='/search.html' class="button is-success is-large">Check out some bills</a>
     <hr />
   </div>
+
+
 
 <div class="container is-text-centered">
     <div class="columns">
@@ -52,7 +54,7 @@
       </div>
       <div class="column">
         <p>Most Recent Badge:</p>
-          <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
+          <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
           <br>
           <a class="is-primary modal-button"><p>View my badges</p></a>
       </div>
@@ -64,18 +66,18 @@
   <div class="modal-background"></div>
   <div class="modal-content">
       <div class="content">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
-        <img src="/assets//Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
+        <img src="/assets/Badge-icon.png" class="badge" alt="Badge">
       </div>
   </div>
   <button class="modal-close"></button>
@@ -83,7 +85,7 @@
 
 <footer>
 </footer>
-<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https:/code.jquery.com/jquery-2.2.1.min.js"></script>
 
 <script type="text/javascript">
 $( ".modal-button" ).click(function() {

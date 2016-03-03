@@ -3,9 +3,9 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :name
       t.string :email
-      t.integer :house_number
-      t.string :street
+      t.integer :address
       t.string :city
+      t.string :state
       t.integer :zip
 
       t.timestamps null: false

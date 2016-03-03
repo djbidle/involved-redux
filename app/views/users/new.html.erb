@@ -1,0 +1,60 @@
+<% provide(:title, 'Signup! | Be heard!') %>
+
+<header class="blue">
+  <div class="header-left is-pulled-left">
+      <a href="/">
+        <img src="/assets/logo.png" alt="Logo" style="height:8vh">
+      </a>
+  </div>
+    <!-- Hamburger menu (on mobile) -->
+  <span class="header-toggle is-pulled-right">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+    <!-- Right side -->
+  <div class="header-right header-menu is-pulled-right">
+
+  </div>
+</header>
+
+<br><br>
+
+<div class="container is-half">
+<h1 class="title is-1 bold is-text-centered">Sign Up</h1>
+<hr />
+<div class="is-text-centered">
+<%= form_for(@user) do |f| %>
+ <%= render 'shared/error_messages' %>
+      
+      <%= f.label :name %>&nbsp;
+       <%= f.text_field :name, class: 'form-control' %><br />
+     
+      
+      <%= f.label :email %>&nbsp;
+      <%= f.email_field :email, class: 'form-control' %><br />
+
+      <%= f.label :password %>&nbsp;
+      <%= f.password_field :password, class: 'form-control' %><br />
+
+      <%= f.label :password_confirmation, "Confirmation" %>&nbsp;
+      <%= f.password_field :password_confirmation, class: 'form-control' %><br />
+      
+      <%= f.label :address %>&nbsp;
+      <%= f.text_field :address %><br />
+      
+      <%= f.label :city %>&nbsp;
+      <%= f.text_field :city %><br />
+      
+      <%= f.label :state %>&nbsp;
+      <%= f.text_field :state %><br />
+      
+      <%= f.label :zip %>&nbsp;
+      <%= f.text_field :zip %><br />
+     
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+</div>    
+<hr />
+</div>

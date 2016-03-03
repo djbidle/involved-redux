@@ -5,7 +5,12 @@ module InvolvedHelper
         if page_title.empty?
             base_title
         else
-            page_title + " | " + base_title
+            if page_title == "Signup! | Be heard!"
+                page_title
+            else
+                
+                page_title + " | " + "INvolved"
+            end    
         end
     end
 end

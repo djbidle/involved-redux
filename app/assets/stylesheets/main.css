@@ -1,0 +1,137 @@
+body{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+header {
+	height: 8vh;
+	border-bottom: 3px solid #ffd54a;
+	margin-bottom: 40px;
+}
+
+
+.hero img {
+	height: 25vh;
+	width: auto;
+	min-height: 100px;
+}
+
+.blue {
+	background-color: #022247;
+}
+
+a {
+    color: #1B75BB;
+}
+
+a:hover {
+    color: #1B75BB;
+    text-decoration: none;
+}
+
+.twitter {
+	background-color: #00aced;
+	color: white;
+}
+
+.facebook {
+	background-color: #3b5998;
+	color: white;
+}
+
+.reddit {
+	background-color: #ff4500;
+	color: white;
+}
+
+.tumblr {
+	background-color: #32506d;
+	color: white;
+}
+
+.icon {
+	color: white;
+}
+
+.light-blue {
+	color: #1B75BB;
+	font-weight: bold;
+}
+
+.white {
+	color: white;
+}
+
+.is-primary {
+	background-color: #1B75BB;
+}
+
+.is-success {
+	background-color: #3EB44A;
+}
+
+.badge {
+	width: 100px;
+	height: auto;
+}
+
+.hero {
+	border-bottom: 5px solid #ffd54a;
+}
+
+.hero-img {
+	width: 50%;
+	height: auto;
+	min-width: 200px;
+}
+
+.hero-footer {
+	background-color: rgba(2,34,71,1);
+	padding: 10px;
+}
+
+.hero-footer .title.is-1 {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.hero-footer .title.is-2 {
+	font-size: 2em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.tag {
+	margin-top: 5px;
+}
+
+.card {
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+.padded-up-down {
+	margin-bottom: 1vh;
+	margin-top: 1vh;
+}
+
+input {
+	margin-bottom: 1vh;
+	margin-top: 1vh;
+}
+
+.votechart {
+	height: 20px;
+	width: 250px;
+	margin-top: 10px;
+}
+
+.trend-title {
+	margin-top: 50px;
+}
+
+footer {
+	height: 100px;
+}

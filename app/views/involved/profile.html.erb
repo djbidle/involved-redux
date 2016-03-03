@@ -1,2 +1,114 @@
-<h1>Involved#profile</h1>
-<p>Find me in app/views/involved/profile.html.erb</p>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.15/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<header class="blue">
+  <div class="header-left is-pulled-left">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" style="height:8vh">
+      </a>
+  </div>
+    <!-- Hamburger menu (on mobile) -->
+  <span class="header-toggle is-pulled-right">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+    <!-- Right side -->
+  <div class="header-right header-menu is-pulled-right">
+    <span class="header-item">
+      <a href="#">Bills</a>
+    </span>
+    <span class="header-item">
+      <a href="#">Trending</a>
+    </span>
+    <span class="header-item">
+      <a class="button" href="#">Login</a>
+    </span>
+  </div>
+</header>
+
+<br />
+  <div class="container is-text-centered">
+    <h3 class="title is-3">Hi, <span class="light-blue">User Name</span>!</h3>
+    <p>You have <span class="light-blue">21</span> points until your next badge.</p>
+    <p>Earn points by voting on and sharing bills.</p>
+    <br />
+    <a class="button is-success is-large">
+      Check out some bills
+    </a>
+    <hr />
+  </div>
+
+<div class="container is-text-centered">
+    <div class="columns">
+      <div class="column">
+        <p>Most Recent Acheivement:</p>
+        <br>
+        <h5 class="title is-5">You voted on <span class="light-blue"><a href="bill_page.html">Senate Bill 666</a></span>!</h5>
+        <p>Your answer: <strong>I support this.</strong></p>
+        <br>
+        <a class="button is-info is-outlined">
+            See results
+        </a>
+      </div>
+      <div class="column">
+        <p>Most Recent Badge:</p>
+          <img src="images/Badge-icon.png" class="badge" alt="Badge">
+          <br>
+          <a class="is-primary modal-button"><p>View my badges</p></a>
+      </div>
+    </div>
+    <hr />
+</div>
+
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+      <div class="content">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+        <img src="images/Badge-icon.png" class="badge" alt="Badge">
+      </div>
+  </div>
+  <button class="modal-close"></button>
+</div>
+
+<footer>
+</footer>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+<script type="text/javascript">
+$( ".modal-button" ).click(function() {
+  $(".modal").addClass("is-active");
+});
+
+$( ".modal-close" ).click(function() {
+  $(".modal").removeClass("is-active");
+});
+
+</script>
+
+
+</body>
+</html>

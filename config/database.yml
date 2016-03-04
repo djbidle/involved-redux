@@ -34,4 +34,9 @@ test:
 production:
   <<: *default
   database: db/production.pg 
-  
+  encoding: utf8
+  database: dbb308uvn0gstn
+  username: qnjcubjwpmavhw
+  password: qxYjg17e0oxAN-nG-XK-HbjFmo
+  host: ec2-54-83-201-196.compute-1.amazonaws.com
+  port: 5432 

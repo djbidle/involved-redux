@@ -1,0 +1,35 @@
+<% provide(:title, "Settings") %>
+<%= render 'layouts/header' %>
+
+<div class="container is-half">
+<h1 class="title is-1 bold is-text-centered">Profile Update</h1>
+<br />
+<hr />
+
+<div class="is-text-centered">
+<%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: '' %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: '' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: '' %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+      <%= f.submit "Save changes", class: "button" %>
+    <% end %>
+
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target="_blank">change</a>
+    </div>
+<br />
+</div>    
+<hr />
+</div>

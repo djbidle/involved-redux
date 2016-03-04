@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  
-  get 'involved/view_bill'
-
+ 
   root 'involved#home'
   
   get '/search' => 'involved#search'
@@ -12,15 +10,23 @@ Rails.application.routes.draw do
 
   get '/graph' => 'involved#graph'
   
+  get 'involved/view_bill' 
+  
+  get 'view_bill' => 'involved#view_bill'
+  
   get 'users/new'
   
   get '/signup' => 'users#new'
   
-  get 'view_bill' => 'involved#view_bill'
+  get 'sessions/new'
+  
+  get '/login' => 'sessions#new'
+  
+  post '/login' => 'sessions#create'
+
+  delete '/logout' => 'sessions#destroy'
   
   resources :users
-
-  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

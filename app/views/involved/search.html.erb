@@ -1,30 +1,5 @@
 <% provide(:title, "Search") %>
-<header class="blue">
-  <div class="header-left is-pulled-left">
-      <a href="/">
-        <img src="/assets/logo.png" alt="Logo" style="height:8vh">
-      </a>
-  </div>
-    <!-- Hamburger menu (on mobile) -->
-  <span class="header-toggle is-pulled-right">
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-
-    <!-- Right side -->
-  <div class="header-right header-menu is-pulled-right">
-    <span class="header-item">
-      <a href="#">Bills</a>
-    </span>
-    <span class="header-item">
-      <a href="#">Trending</a>
-    </span>
-    <span class="header-item">
-      <a class="button" href="#">Login</a>
-    </span>
-  </div>
-</header>
+<%= render 'layouts/header' %>
 
 <div class="container is-text-centered">
   <h1 class="title is-1 bold">Search Bills</h1>

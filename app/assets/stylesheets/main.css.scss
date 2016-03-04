@@ -31,7 +31,7 @@ a:hover {
 .thin-container {
 	width: 35%;
 	margin: auto;
-	padding-bottom: 10vh;
+	padding-bottom: 0vh;
 }
 
 .error-signup {
@@ -42,6 +42,21 @@ a:hover {
 .signup-title {
 	text-align: left;
 }
+
+.rememberme-box {
+	height: 2vh;
+}
+
+.aligntop {
+	align: top;
+	padding-top: 0px;
+	margin-top: 0;
+}
+
+.hug {
+	height: 0px auto;
+}
+
 
 .twitter {
 	background-color: #00aced;

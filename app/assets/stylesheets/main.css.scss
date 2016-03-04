@@ -28,6 +28,21 @@ a:hover {
     text-decoration: none;
 }
 
+.thin-container {
+	width: 35%;
+	margin: auto;
+	padding-bottom: 10vh;
+}
+
+.error-signup {
+	position: relative;
+	padding-bottom: -5vh;
+}
+
+.signup-title {
+	text-align: left;
+}
+
 .twitter {
 	background-color: #00aced;
 	color: white;
@@ -41,6 +56,26 @@ a:hover {
 .reddit {
 	background-color: #ff4500;
 	color: white;
+}
+
+.text {
+	width: 100%;
+	border-radius:5px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #022247;
+}
+
+.text:focus, textarea:focus {
+  box-shadow: 0 0 5px#022247;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #022247;
 }
 
 .tumblr {
@@ -120,6 +155,37 @@ a:hover {
 input {
 	margin-bottom: 1vh;
 	margin-top: 1vh;
+}
+
+.button-blue {
+    -webkit-appearance: none;
+    background: #022247;
+    margin-top: 1vh;
+    border: 1px solid #d3d6db;
+    border-radius: 3px;
+    color: #f5f7fa;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    height: 32px;
+    line-height: 24px;
+    padding: 3px 8px;
+    position: relative;
+    vertical-align: top;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 3px 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+input.button-blue:hover {
+    color: #ffd54a;
+    text-decoration: none;
 }
 
 .votechart {

@@ -3,7 +3,7 @@
     <div class="message-header">
       The form contains <%= pluralize(@user.errors.count, "error") %>.
     </div>
-    <ul class="message-body" style='list-style-type: circle;'>
+    <ul class="message-body">
     <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>

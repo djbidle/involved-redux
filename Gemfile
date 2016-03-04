@@ -36,6 +36,10 @@ gem 'rake', '~> 10.5.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Use for filling up our database with fake users and setting pagnation
+gem 'faker', '1.4.2'
+gem 'will_paginate', '~> 3.1'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -60,7 +64,7 @@ group :development do
 end
 
 group :production do
-  #gem 'pg',             '0.17.1'
-  #gem 'rails_12factor', '0.0.2'
-  #gem 'puma', '~> 2.16'
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+  gem 'puma', '~> 2.16'
 end

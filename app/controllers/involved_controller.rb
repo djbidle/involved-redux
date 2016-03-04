@@ -5,11 +5,7 @@ class InvolvedController < ApplicationController
   def search
   end
 
-  def signup
-  end
-  
   def profile
-    
   end
 
   def trending

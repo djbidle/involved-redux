@@ -1,0 +1,17 @@
+<% provide(:title, 'All Users!') %>
+
+<%= render 'layouts/header' %>
+
+<div class="container is-half">
+<h1 class="title is-1 bold is-text-centered">All Users</h1>
+<br />
+<hr />
+<%= will_paginate %>
+<ul class="users">
+  <%= render @users %>
+ </ul>
+<%= will_paginate %>
+
+
+<hr />
+</div>

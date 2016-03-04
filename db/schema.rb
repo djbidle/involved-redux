@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160304040113) do
+ActiveRecord::Schema.define(version: 20160304185350) do
 
   create_table "api_fetchers", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -25,10 +25,11 @@ ActiveRecord::Schema.define(version: 20160304040113) do
     t.string   "city",            limit: 255
     t.string   "state",           limit: 255
     t.integer  "zip",             limit: 4
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                                  null: false
+    t.datetime "updated_at",                                  null: false
     t.string   "password_digest", limit: 255
     t.string   "remember_digest", limit: 255
+    t.boolean  "admin",                       default: false
   end
 
 end

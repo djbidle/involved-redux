@@ -3,42 +3,51 @@
 <%= render 'layouts/header' %>
 
 <div class="container is-half">
-<h1 class="title is-1 bold is-text-centered">Sign Up</h1>
+<h1 class="title is-1 bold is-text-centered">Signup</h1>
 <br />
 <hr />
 
 <div class="is-text-centered">
+ <div class="error-signup">
 <%= form_for(@user) do |f| %>
  <%= render 'shared/error_messages' %>
+ </div>    
+ </div>
       <br />
+      
+        <div class="thin-container">
+       <div class="signup-title">
+       
       <%= f.label :name %>&nbsp;
-       <%= f.text_field :name, class: 'form-control' %><br />
+      <div><%= f.text_field :name, class: 'text' %></div><br />
      
       
       <%= f.label :email %>&nbsp;
-      <%= f.email_field :email, class: 'form-control' %><br />
+      <div><%= f.email_field :email, class: 'text' %></div><br />
 
       <%= f.label :password %>&nbsp;
-      <%= f.password_field :password, class: 'form-control' %><br />
+      <div><%= f.password_field :password, class: 'text' %></div><br />
 
-      <%= f.label :password_confirmation, "Confirmation" %>&nbsp;
-      <%= f.password_field :password_confirmation, class: 'form-control' %><br />
+      <%= f.label :password_confirmation, "Confirm Password" %>&nbsp;
+      <div><%= f.password_field :password_confirmation, class: 'text' %></div><br />
       
-      <%= f.label :address %>&nbsp;
-      <%= f.text_field :address %><br />
+      <%= f.label :address %>&nbsp;</div>
+      <div><%= f.text_field :address, class: 'text' %></div><br />
       
       <%= f.label :city %>&nbsp;
-      <%= f.text_field :city %><br />
+      <div><%= f.text_field :city, class: 'text' %></div><br />
       
       <%= f.label :state %>&nbsp;
-      <%= f.text_field :state %><br />
+      <div><%= f.text_field :state, class: 'text' %></div><br />
       
       <%= f.label :zip %>&nbsp;
-      <%= f.text_field :zip %><br />
-     
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <div><%= f.text_field :zip, class: 'text' %></div><br />
+      
+       <%= f.submit "Create my account", class: "button-blue" %>
+      </div></div>
+      
     <% end %>
      <br />
-</div>    
+
 <hr />
 </div>

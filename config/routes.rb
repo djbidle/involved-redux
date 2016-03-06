@@ -2,29 +2,27 @@ Rails.application.routes.draw do
  
   root 'involved#home'
   
-  get '/search' => 'involved#search'
-  
-  get '/profile' => 'involved#profile'
-
   get '/trending' => 'involved#trending'
 
   get '/graph' => 'involved#graph'
   
-  get 'involved/view_bill' 
-  
   get 'view_bill' => 'involved#view_bill'
   
-  get 'users/new'
-  
   get '/signup' => 'users#new'
-  
-  get 'sessions/new'
   
   get '/login' => 'sessions#new'
   
   post '/login' => 'sessions#create'
-
+  
   delete '/logout' => 'sessions#destroy'
+  
+  get '/users' => 'index#users'
+  
+  get '/data' => 'data#data'
+  
+  get '/sessions' => 'data#sessions'
+  
+  get '/search' => 'data#search'
   
   resources :users
 

@@ -17,6 +17,8 @@ gem 'coffee-rails', '~> 4.1.1'
 gem 'bulma-rails', '~> 0.0.15'
 # Use font awesome
 gem 'font-awesome-rails', '~> 4.5.0.1'
+# use JSON
+gem 'json'
 # Used to as a fix
 gem 'railties', '~> 4.2.5'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -52,6 +54,7 @@ group :development, :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
+  
 end
 
 group :development do
@@ -60,6 +63,13 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  
+  # Dep for rest-client
+  gem 'pry', '~> 0.10.3'
+  gem 'pry-doc', '~> 0.8.0'
+  gem 'rdoc', '~> 4.2', '>= 4.2.2'
+  gem 'rspec', '~> 3.4'
+# gem 'webmock', '~> 1.24', '>= 1.24.2'
 
 end
 

@@ -1,17 +1,27 @@
-<% provide(:title, 'All Users!') %>
+
 
 <%= render 'layouts/header' %>
 
-<div class="container is-half">
-<h1 class="title is-1 bold is-text-centered">All Users</h1>
-<br />
-<hr />
-<%= will_paginate %>
-<ul class="users">
-  <%= render @users %>
- </ul>
-<%= will_paginate %>
-
-
-<hr />
-</div>
+<% if current_user.admin? %>
+  <% provide(:title, 'All Users!') %>
+  <div class="container is-half">
+  <h1 class="title is-1 bold is-text-centered">All Users</h1>
+  <br />
+  <hr />
+    <%= will_paginate %>
+    <ul class="users">
+      <%= render @users %>
+     </ul>
+    <%= will_paginate %>
+  <hr />
+  </div>
+<% else %>
+  <% provide(:title, '') %>
+  <div class="container is-half">
+  <h1 class="title is-1 bold is-text-centered">Warning!</h1>
+  <br />
+  <hr />
+    <div>Sorry you do not have access to this information</div>
+  <hr />
+  </div>
+<% end %>

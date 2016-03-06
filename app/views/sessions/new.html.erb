@@ -3,7 +3,7 @@
 <header class="blue">
   <div class="header-left is-pulled-left">
       <a href="/">
-        <img src="/assets/logo.png" alt="Logo" style="height:8vh">
+        <img src="<%= asset_path("logo.png") %>" alt="Logo" style="height:8vh">
       </a>
   </div>
     <!-- Hamburger menu (on mobile) -->
@@ -47,7 +47,7 @@
         
       <div><%= f.submit "Log in", class: "button-blue" %></div>
     <% end %>
-
+    <br />
     <div>New user? <%= link_to "Sign up now!", signup_path %></div>
 <br />
 </div>    

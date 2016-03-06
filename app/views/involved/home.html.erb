@@ -18,17 +18,17 @@
 <div class="columns">
   <div class="column is-third is-text-centered">
     <h3 class="title is-3">Profile</h3>
-    <a href="profile.html"><img src="<%= asset_path("icon-profile.png") %>"></a>
+    <%= render "home" %><img src="<%= asset_path("icon-profile.png") %>"></a>
     <p>Make a profile to track legislation and vote for bills.</p>
   </div>
   <div class="column is-third is-text-centered">
     <h3 class="title is-3">Search</h3>
-    <a href="search.html"><img src="<%= asset_path("icon-search.png") %>"></a> 
+    <a href="/search"><img src="<%= asset_path("icon-search.png") %>"></a> 
     <p>Explore bills you're interested in.</p>
   </div>
   <div class="column is-third is-text-centered">
     <h3 class="title is-3">Trending</h3>
-    <a href="trending.html"><img src="<%= asset_path("icon-trend.png") %>"></a> 
+    <a href="/trending.html"><img src="<%= asset_path("icon-trend.png") %>"></a> 
     <p>Find out the top bills that people support, opposed or or votes.</p>
   </div>
 </div>

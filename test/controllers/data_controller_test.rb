@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ApiFetcherTest < ActiveSupport::TestCase
+class DataControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

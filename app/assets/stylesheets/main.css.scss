@@ -31,7 +31,7 @@ a:hover {
 .thin-container {
 	width: 35%;
 	margin: auto;
-	padding-bottom: 0vh;
+	padding-bottom: 10vh;
 }
 
 .error-signup {
@@ -42,21 +42,6 @@ a:hover {
 .signup-title {
 	text-align: left;
 }
-
-.rememberme-box {
-	height: 2vh;
-}
-
-.aligntop {
-	align: top;
-	padding-top: 0px;
-	margin-top: 0;
-}
-
-.hug {
-	height: 0px auto;
-}
-
 
 .twitter {
 	background-color: #00aced;
@@ -122,6 +107,24 @@ a:hover {
 .badge {
 	width: 100px;
 	height: auto;
+}
+
+.menu {
+	position: relative;
+}
+
+.submenu {
+	position: absolute;
+	display: none;
+}
+
+.menu-admin {
+	position: relative;
+}
+
+.submenu-admin {
+	position: absolute;
+	display: none;
 }
 
 .hero {
@@ -200,7 +203,10 @@ input {
 
 input.button-blue:hover {
     color: #ffd54a;
-    text-decoration: none;
+}
+
+a.button-blue:hover {
+    color: #ffd54a;
 }
 
 .votechart {

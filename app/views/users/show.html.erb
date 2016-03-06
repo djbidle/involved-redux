@@ -4,9 +4,8 @@
 <br />
   <div class="container is-text-centered">
     
-    
-    <h3 class="title is-3">Hi, <%= @user.name %><span class="light-blue"></span>!</h3>
-    <div class="" alt="User Profile Picture"><%= gravatar_for @user %></div>
+    <h3 class="title is-3">Hello, <%= @user.name %><span class="light-blue"></span>!</h3>
+    <div class="" alt="User Profile Picture"><%= gravatar_for(@user, size: 1) %></div>
     <p>You have <span class="light-blue">21</span> points until your next badge.</p>
     <p>Earn points by voting on and sharing bills.</p>
     <br />

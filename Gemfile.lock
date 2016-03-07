@@ -45,6 +45,7 @@ GEM
     bulma-rails (0.0.16)
       sass (~> 3.2)
     byebug (8.2.2)
+    chartkick (1.4.2)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -222,6 +223,7 @@ DEPENDENCIES
   builder (~> 3.2.2)
   bulma-rails (~> 0.0.15)
   byebug
+  chartkick (~> 1.4, >= 1.4.1)
   coffee-rails (~> 4.1.1)
   faker (= 1.4.2)
   font-awesome-rails (~> 4.5.0.1)

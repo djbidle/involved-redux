@@ -78,4 +78,6 @@ class DataController < ApplicationController
   def show
     @bill = BillDetail.find(params[:id])
   end
+  
+    
 end

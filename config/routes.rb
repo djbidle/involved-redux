@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   get '/trending' => 'data#trending' #may be moved to data#trending
 
-  get '/graph' => 'involved#graph' #may be moved to data#graph (for admins only)
+  get '/graph' => 'data#graph' #may be moved to data#graph (for admins only)
   
   get 'view_bill' => 'involved#view_bill' #may be moved to data#bills
   

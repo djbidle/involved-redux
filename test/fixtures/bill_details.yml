@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bill_title: MyText
+  bill_name: MyString
+  bill_number: MyString
+  bill_description: MyString
+  bill_status: MyString
+  bill_stage: MyString
+  session: MyString
+  origin_chamber_name: MyString
+  current_chamber_name: MyString
+  bill_type: MyString
+  bill_link: MyString
+  committee_status: MyString
+  bill_digest: MyText
+  bill_author_position_title: MyString
+  bill_author_first_name: MyString
+  bill_author_last_name: MyString
+  bill_author_party: MyString
+  bill_author_link: MyString
+  bill_author_full_name: MyString
+
+two:
+  bill_title: MyText
+  bill_name: MyString
+  bill_number: MyString
+  bill_description: MyString
+  bill_status: MyString
+  bill_stage: MyString
+  session: MyString
+  origin_chamber_name: MyString
+  current_chamber_name: MyString
+  bill_type: MyString
+  bill_link: MyString
+  committee_status: MyString
+  bill_digest: MyText
+  bill_author_position_title: MyString
+  bill_author_first_name: MyString
+  bill_author_last_name: MyString
+  bill_author_party: MyString
+  bill_author_link: MyString
+  bill_author_full_name: MyString

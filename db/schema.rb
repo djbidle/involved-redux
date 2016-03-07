@@ -11,7 +11,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160305052535) do
+ActiveRecord::Schema.define(version: 20160307082220) do
+
+  create_table "bill_data", force: :cascade do |t|
+    t.string   "session",             limit: 255
+    t.string   "bill_name",           limit: 255
+    t.string   "origin_chamber_link", limit: 255
+    t.string   "origin_chamber_name", limit: 255
+    t.string   "bill_type",           limit: 255
+    t.string   "bill_link",           limit: 255
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  create_table "bill_details", force: :cascade do |t|
+    t.text     "bill_title",                 limit: 65535
+    t.string   "bill_name",                  limit: 255
+    t.string   "bill_number",                limit: 255
+    t.string   "bill_description",           limit: 255
+    t.string   "bill_status",                limit: 255
+    t.string   "bill_stage",                 limit: 255
+    t.string   "session",                    limit: 255
+    t.string   "origin_chamber_name",        limit: 255
+    t.string   "current_chamber_name",       limit: 255
+    t.string   "bill_type",                  limit: 255
+    t.string   "bill_link",                  limit: 255
+    t.string   "committee_status",           limit: 255
+    t.text     "bill_digest",                limit: 65535
+    t.string   "bill_author_position_title", limit: 255
+    t.string   "bill_author_first_name",     limit: 255
+    t.string   "bill_author_last_name",      limit: 255
+    t.string   "bill_author_party",          limit: 255
+    t.string   "bill_author_link",           limit: 255
+    t.string   "bill_author_full_name",      limit: 255
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.string   "session_name", limit: 255
+    t.string   "session_link", limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name",            limit: 255

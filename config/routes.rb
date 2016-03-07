@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   
   delete '/logout' => 'sessions#destroy'
   
-  get '/users' => 'index#users'
+  get '/users' => 'users#index'
   
   get '/data' => 'data#data'
   

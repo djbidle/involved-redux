@@ -9,20 +9,29 @@
 <div class="is-text-centered">
 <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
+</div>
+<div id="container">
+    <div class="gravatar_edit">
+      <%= gravatar_for(@user, @id) %>
+      <a href="http://gravatar.com/emails" class="button" target="_blank">Change</a>
+    </div>
+</div>
 
+  <br />
+    
       <%= f.label :name %>
-      <%= f.text_field :name, class: '' %>
+      <div><%= f.text_field :name, class: 'text' %></div><br />
 
       <%= f.label :email %>
-      <%= f.email_field :email, class: '' %>
+      <div><%= f.email_field :email, class: 'text' %></div><br />
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: '' %>
+      <div><%= f.password_field :password, class: 'text' %></div><br />
 
       <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <div><%= f.password_field :password_confirmation, class: 'text' %></div><br />
       
-      <%= f.label :address %>&nbsp;</div>
+      <%= f.label :address %>&nbsp;
       <div><%= f.text_field :address, class: 'text' %></div><br />
       
       <%= f.label :city %>&nbsp;
@@ -33,14 +42,12 @@
       
       <%= f.label :zip %>&nbsp;
       <div><%= f.text_field :zip, class: 'text' %></div><br />
+      
 
-      <%= f.submit "Save changes", class: "button" %>
+      <%= f.submit "Save changes", class: "button-blue" %>
     <% end %>
 
-    <div class="gravatar_edit">
-      <%= gravatar_for(@user, @id) %>
-      <a href="http://gravatar.com/emails" target="_blank">change</a>
-    </div>
+
 <br />
 </div>    
 <hr />

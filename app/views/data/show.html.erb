@@ -1,27 +1,44 @@
-<% provide(:title, "Bills | Be heard!") %>
+<!--        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/themes/ui-lightness/jquery-ui.css">
+    <link rel="stylesheet" href="http://j-ulrich.github.io/jquery-ui-multiprogressbar/jquery.ui.multiprogressbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.15/css/bulma.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    <script src="jquery-1.12.1.js"></script>
+    <script src="http://j-ulrich.github.io/jquery-ui-multiprogressbar/jquery.ui.multiprogressbar.js"></script>
+    <script src="http://j-ulrich.github.io/jquery-ui-multiprogressbar/jquery.outerhtml.js"></script>-->
+
+<% provide(:title, @bill.bill_name) %>
 <%= render 'layouts/header' %>
 
 <div class="container is-text-centered">
-  <h1 class="title is-1 bold">Bills</h1>
+  <h1 class="title is-1 bold"><%=@bill.origin_chamber_name.mb_chars.capitalize.to_s %> Bill 
+    <%= @bill.bill_number %></h1>
   <br />
   <hr />
   
   <div class="container is-text-centered">
-  <h2 class="title is-2"><%= @bill.origin_chamber_name%><%= @bill.bill_name%></h2>
-  <h6 class="subtitle is-6">Authored by: <span class="light-blue"><div><%= @bill.bill_author_full_name%><%= @bill.bill_author_party%></div></span></h6>
+  <h6 class="subtitle is-6">Authored by: <span class="light-blue"><div><%= @bill.bill_author_full_name%> (<%= @bill.bill_author_party%>)</div></span></h6>
   <p><div><%= @bill.bill_title%></div></p>
   <p><div><%= @bill.bill_digest%></div>></p>
   
   <br>
 
-
 <h4 class="title is-4">My postion:</h4>
+<% if logged_in?  %>
   <a class="button is-success">
     I support this.
   </a>
   <a class="button is-danger">
     I oppose this.
   </a>
+  
+            <% else %>
+          You must <%= link_to "login", login_path %> or <%= link_to "sign up", signup_path %> to vote.
+    </ul>
+    </span>
+      
+  <% end %>
   <br>
   <br>
   <br>
@@ -69,14 +86,4 @@
 
 
 </div>
-
-  <div><%= @bill.bill_title%></div>
-  <div><%= @bill.bill_name%></div>
-  <div><%= @bill.bill_author_full_name%></div>
-  <div><%= @bill.bill_author_party%></div>
-  <div><%= @bill.bill_digest%></div>
-
-
-
-
 </div>

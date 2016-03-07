@@ -2,7 +2,7 @@ Rails.application.routes.draw do
  
   root 'involved#home'
   
-  get '/trending' => 'involved#trending' #may be moved to data#trending
+  get '/trending' => 'data#trending' #may be moved to data#trending
 
   get '/graph' => 'involved#graph' #may be moved to data#graph (for admins only)
   

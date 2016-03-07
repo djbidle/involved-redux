@@ -15,6 +15,15 @@ class UsersController < ApplicationController
     @user = User.new
   end
   
+  def profile
+    if logged_in?
+      @user = current_user  
+      render 'show'
+    else
+      redirect_to login_url
+    end
+  end
+  
   def create
     @user = User.new(user_params)
     if @user.save

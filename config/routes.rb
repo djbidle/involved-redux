@@ -2,27 +2,31 @@ Rails.application.routes.draw do
  
   root 'involved#home'
   
-  get '/trending' => 'involved#trending'
+  get '/trending' => 'involved#trending' #may be moved to data#trending
 
-  get '/graph' => 'involved#graph'
+  get '/graph' => 'involved#graph' #may be moved to data#graph (for admins only)
   
-  get 'view_bill' => 'involved#view_bill'
+  get 'view_bill' => 'involved#view_bill' #may be moved to data#bills
   
-  get '/signup' => 'users#new'
+  get '/signup' => 'users#new' #signup page is complete
   
-  get '/login' => 'sessions#new'
+  get '/login' => 'sessions#new' #login page is complete
   
-  post '/login' => 'sessions#create'
+  post '/login' => 'sessions#create' #complete
   
-  delete '/logout' => 'sessions#destroy'
+  delete '/logout' => 'sessions#destroy' #complete
   
-  get '/users' => 'users#index'
+  get '/profile' => 'users#profile' #used to redirect user to profile of logged in else to login page
   
-  get '/data' => 'data#data'
+  get '/users' => 'users#index' #complete
   
-  get '/sessions' => 'data#sessions'
+  get '/bills' => 'data#show' #probably will not be used, was for testing 
   
-  get '/search' => 'data#search'
+  get '/sessions' => 'data#sessions' #probably will not be used, was for testing
+  
+  get '/search' => 'data#search' #building search page
+  
+  resources :data
   
   resources :users
 

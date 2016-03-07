@@ -1,4 +1,22 @@
 <% provide(:title, "Search | Be heard!") %>
 <%= render 'layouts/header' %>
 
-<%= get_bill_details %>
+<div class="container is-text-centered">
+  <h1 class="title is-1 bold">Search Bills</h1>
+  
+  <div class="control is-grouped">
+    <%= form_tag("/search", :method => 'get') do %>
+      <%= text_field_tag :search, params[:search], class: "input", placeholder: "Find a Bill" %>
+      <%= submit_tag "Search", name: nil, class: "button is-info"  %>
+    <% end %>
+  </div>
+  <% if !@responses.nil? %>
+  <% @responses.each do |response| %>
+    <div class="message is-warning">
+      <div class="message-header bill-title"><span style="font-size: 14px; color: white"><%= link_to response.bill_title, "/data/#{response.id}" %></span></div>
+      <p class="message-body"><%= truncate(response.bill_digest, length: 100) %></p>
+  </div>
+  <% end %>
+<% end %>
+
+</div>    

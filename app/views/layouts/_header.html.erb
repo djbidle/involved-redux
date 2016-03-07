@@ -15,6 +15,7 @@
         {
             $('.submenu-admin').slideToggle();
         });
+        
     });
     </script>
 
@@ -24,6 +25,7 @@
         <%= image_tag("logo.png", :alt => "Logo", :style => "height:8vh") %>
       </a>
   </div>
+  
     <!-- Hamburger menu (on mobile) -->
   <span class="header-toggle is-pulled-right">
     <span></span>
@@ -34,46 +36,31 @@
     <!-- Right side -->
   <div class="header-right header-menu is-pulled-right">
     <span class="header-item">
-      <a href="#">Bills</a>
+      <a href="/search">Bills</a>
     </span>
     <span class="header-item">
-      <a href="#">Trending</a>
+      <a href="/trending">Trending</a>
     </span>
-    <span class="header-item">
-      <% if logged_in? %>
-            
-            
+    <% if logged_in?  %>
     <% if current_user.admin? %>                    
     <span class="header-item">
     <ul id="menu">
-        <li id="Admin"><span class="button">Admin</span></li>
-        <li class="submenu" style="margin-top: 2vh"><%= link_to "Users", '#', :class=>"button-blue" %></li>
+        <li id="Admin"><span class="is-text-left">Admin</span></li>
+        <li class="submenu" style="margin-top: 2vh"><%= link_to "Users", '/users', :class=>"button-blue" %></li>
     </ul>
     </span>
     <% end %>
             
     <span class="header-item">
     <ul id="menu-admin">
-        <li id="User"><span class="button">Account</span></li>
+        <li id="User"><span class="is-text-left">Account</span></li>
         <li class="submenu-admin" style="margin-top: 2vh"><%= link_to "Profile", current_user, :class=>"button-blue" %></li>
-        <li class="submenu-admin" style="margin-top: 5vh"><%= link_to "Log Out", logout_path, method: "delete", :class=>"button-blue" %></li>
+        <li class="submenu-admin" style="margin-top: 5vh"><%= link_to "Settings", edit_user_path(current_user), :class=>"button-blue" %></li>
+        <li class="submenu-admin" style="margin-top: 8vh"><%= link_to "Log Out", logout_path, method: "delete", :class=>"button-blue" %></li>
     </ul>
     </span>
   
-            <!--li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Account <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><%= link_to "Profile", current_user %></li>
-                <li class="submenu"><%= link_to "Settings", '#' %></li>
-                <li  class="submenu"></li>
-                <li>
-                  <%= link_to "Log Out", logout_path, method: "delete" %>
-                </li>
-              </ul>
-            </li-->
-              </div>
+              
           <% else %>
           
               <span class="header-item">
@@ -83,12 +70,9 @@
         <li class="submenu" style="margin-top: 5vh"><%= link_to "Sign up", signup_path, :class=>"button-blue" %></li>
     </ul>
     </span>
-    
-          <!--span class="header-item">
-            <%= link_to "Login", login_path, :class=>"button"  %>
-            </span-->
-            
+
       <% end %>
-     
-      </span>  
+    
+      </span> 
+      </div>
 </header>

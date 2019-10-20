@@ -20,7 +20,7 @@ gem 'font-awesome-rails', '~> 4.5.0.1'
 # use JSON
 gem 'json'
 # Use for chart
-gem 'chartkick', '~> 1.4', '>= 1.4.1'
+gem 'chartkick', '~> 3.2'
 # Used to as a fix
 gem 'railties', '~> 4.2.5'
 # See https://github.com/rails/execjs#readme for more supported runtimes
